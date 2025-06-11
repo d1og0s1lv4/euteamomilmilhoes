@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.page-one, .page-two {
+  min-height: 100dvh;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+  color: #8b2e5d;
+  text-align: center;
+}
+
+.carousel-inner {
+  max-width: 15vw;
+  max-height: 40vh;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #b30059;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+#timer {
+  font-family: "Edu VIC WA NT Hand Pre", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffcce0;
+  max-width: 90%;
+}
+
+.heart {
+  font-size: 2rem;
+  color: #ff4d88;
+  animation: pulse 1.5s infinite;
+  margin: 15px 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+.letter-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #ff99cc;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  z-index: 2;
+}
+
+.letter-btn:hover {
+  background-color: #ff66a3;
+}
+
+.img-button {
+  width: 200px;
+  max-height: 200px;
+}	
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 204, 229, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: #fff0f5;
+  margin: 10% auto;
+  padding: 18px;
+  border: 2px solid #ff99cc;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: #8b2e5d;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  position: relative;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+/* Botão fechar */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #b30059;
+}
+
+@media (max-width: 600px) {
+  .page-one,
+  .page-two {
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    
+  }
+
+  .carousel-inner {
+    max-width: 90dvw;
+    max-height: 50dvh;
+    margin-bottom: 16px;
+  }
+
+  #timer {
+    font-size: .9rem;
+    padding: 15px 20px;
+    border-radius: 16px;
+  }
+
+  .heart {
+    font-size: 1.8rem;
+  }
+
+  .letter-btn {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 1rem;
+    margin-top: 16px;
+    border-radius: 10px;
+  }
+
+  .img-button {
+    width: 120px;
+    max-height: 120px;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 20% auto;
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .close-btn {
+    top: 10px;
+    right: 15px;
+    font-size: 1.3rem;
+  }
+}
