@@ -147,7 +147,7 @@ h1 {
   color: #b30059;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
   .page-one,
   .page-two {
     padding: 20px 10px;
