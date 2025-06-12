@@ -77,3 +77,4 @@ window.addEventListener("click", (e) => {
     letterModal.style.display = "none";
   }
 });
+
