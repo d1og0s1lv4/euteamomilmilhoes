@@ -8,7 +8,8 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.page-one, .page-two {
+.page-one,
+.page-two {
   min-height: 100dvh;
   font-family: "Quicksand", sans-serif;
   display: flex;
@@ -103,7 +104,7 @@ h1 {
 .img-button {
   width: 200px;
   max-height: 200px;
-}	
+}
 
 .modal {
   display: none;
@@ -137,7 +138,6 @@ h1 {
   display: none;
 }
 
-/* Botão fechar */
 .close-btn {
   position: absolute;
   top: 15px;
@@ -151,12 +151,11 @@ h1 {
   .page-one,
   .page-two {
     padding: 20px 10px;
-    height: auto;
+    height: 100dvh;
   }
 
   h1 {
-    font-size: 2.3rem;
-    
+    font-size: 8rem;
   }
 
   .carousel-inner {
@@ -166,13 +165,13 @@ h1 {
   }
 
   #timer {
-    font-size: .9rem;
+    font-size: 4rem;
     padding: 15px 20px;
     border-radius: 16px;
   }
 
   .heart {
-    font-size: 1.8rem;
+    font-size: 8rem;
   }
 
   .letter-btn {
@@ -184,15 +183,20 @@ h1 {
   }
 
   .img-button {
-    width: 120px;
-    max-height: 120px;
+    width: 400px;
+    max-height: 400px;
+  }
+
+  .modal {
+     width: 100%;
+     height: 100%;
   }
 
   .modal-content {
     width: 90%;
     margin: 20% auto;
     padding: 20px;
-    font-size: 0.95rem;
+    font-size: 2.5rem;
   }
 
   .close-btn {
